@@ -1,0 +1,36 @@
+.body {
+  position: relative;
+}
+.menu {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: dodgerblue;
+  padding: 60px 40px;
+  clip-path: circle(12% at top right);
+  transition: clip-path 500ms;
+}
+
+.toggle-menu {
+  position: absolute;
+  right: 0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  padding-right: 1rem;
+  background-color: dodgerblue;
+}
+
+.menu.visible {
+  clip-path: circle(100%);
+}
+
+.menu a {
+  display: block;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
